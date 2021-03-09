@@ -40,6 +40,10 @@ class CloudBaseAuth extends AuthProvider {
     return authState;
   }
 
+  Future<bool> isWxInstalled() async {
+    return await _wxAuthProvider.isWxInstalled();
+  }
+
   /// 自定义登录
   Future<CloudBaseAuthState> signInWithTicket(String ticket) async {
     if (_customAuthProvider == null) {
