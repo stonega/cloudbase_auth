@@ -41,6 +41,9 @@ class CloudBaseAuth extends AuthProvider {
   }
 
   Future<bool> isWxInstalled() async {
+    if (_wxAuthProvider == null) {
+      _wxAuthProvider = WxAuthProvider(super.core);
+    }
     return await _wxAuthProvider.isWxInstalled();
   }
 
