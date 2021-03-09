@@ -52,6 +52,4 @@ static CloudbaseWxAuth *instance = nil;
   [WXApi sendReq:req completion:nil];
 }
 
-}
-
 @end
