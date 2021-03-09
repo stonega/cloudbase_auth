@@ -40,7 +40,7 @@
 
 - (void)handleWxAuthIsInstalled:(FlutterMethodCall*)call callback:(FlutterResult)callback {
   bool install =  [WXApi isWXAppInstalled];
-  callback(@("install");
+  callback(@"install");
 }
 
 @end
